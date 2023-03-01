@@ -9,6 +9,7 @@ prep_exampletext = tfidf.transform((([Lemmatizer(Stemmer(Tokenizer(exampletext))
 print(prep_exampletext)
 print(best_mnbc_model_test.predict((prep_exampletext)))
 
+Output:
   (0, 43994)	0.39724507077922017
   (0, 42228)	0.4496084885731648
   (0, 41765)	0.5007290572366171
