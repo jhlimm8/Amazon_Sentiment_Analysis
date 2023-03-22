@@ -18,4 +18,4 @@ Output:
   (0, 4915)	0.29244687317950285
 [1]
 ```
-
+In the output above, we see that the model predicted [1] i.e. a positive sentiment, as opposed to [0] a negative sentiment.
