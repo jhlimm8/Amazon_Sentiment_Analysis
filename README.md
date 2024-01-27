@@ -1,5 +1,5 @@
-# Amazon-Sentiment-Analysis-with-Stacking-Classifier
-Sentiment Analysis on Amazon Review Dataset using a Stacking Classifier made of an Optuna-tuned MLP Classifier, a Random Forest Classifier, and a Multinomial Naive Bayes Classifier as Base Estimators with a Logistic Regression Classifier as the final estiamator.  An example of using the model to predict a sentence after training would be:
+# Amazon-Sentiment-Analysis
+Sentiment Analysis on an Amazon Review Dataset using different classifiers. Three base classifiers are trained, an Optuna hyperparameter-tuned MLP Classifier, a Random Forest Classifier, and a Multinomial Naive Bayes Classifier. A Logistic Regression Model is then used to synthesize the results of the three models to create an ensemble Stacking Classifier.  An example of using one of the models to predict a sentence after training would be:
 
 ```
 exampletext = 'taylor swift is truly the greatest artist of our generation!!!!'
@@ -18,4 +18,4 @@ Output:
   (0, 4915)	0.29244687317950285
 [1]
 ```
-In the output above, we see that the model took as input a sparse embedding matrix that has 6 non-zero terms representing the tokenized input sentence. The model then predicted [1] i.e. a positive sentiment, as opposed to [0] a negative sentiment.
+In the output above, the model transformed the input into a sparse embedding vector with 6 non-zero terms. The model then predicted [1] i.e. a positive sentiment, as opposed to [0] a negative sentiment.
